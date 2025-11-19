@@ -68,8 +68,8 @@ CREATE TABLE crime_record (
   -- 원 데이터
   occurred_at  DATETIME NOT NULL,
   address      VARCHAR(255),
-  lon          DECIMAL(12,9),
-  lat          DECIMAL(12,9),
+  lon          DOUBLE,
+  lat          DOUBLE,
   descript     VARCHAR(255),
 
   category_id  INT NOT NULL,
