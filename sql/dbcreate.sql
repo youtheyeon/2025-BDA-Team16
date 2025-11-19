@@ -61,15 +61,15 @@ CREATE TABLE case_status (
   status_label VARCHAR(64) NOT NULL
 );
 
---(8) crime_record - 범죄 사건 기록
+-- (8) crime_record - 범죄 사건 기록
 CREATE TABLE crime_record (
   crime_id     BIGINT AUTO_INCREMENT PRIMARY KEY,
 
   -- 원 데이터
   occurred_at  DATETIME NOT NULL,
   address      VARCHAR(255),
-  lon          DECIMAL(12,9),
-  lat          DECIMAL(12,9),
+  lon          DOUBLE,
+  lat          DOUBLE,
   descript     VARCHAR(255),
 
   category_id  INT NOT NULL,
